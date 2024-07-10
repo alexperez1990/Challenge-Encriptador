@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorChallenge</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="header__imagen" src="./assets/Logo.png" alt="imagen de Alura">
+    </header>
+    <main>
+        <section class="contenido1">
+            <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="boton">
+                <button  class="boton__encriptar" type="submit">Encriptar</button>
+                <button class="boton__descriptar" type="submit">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido2">
+            <div class="contenido2__texto">
+                <img class="presentacion__imagen2" src="./assets/Muñeco.png" alt="imagen de muñeco">
+                <p class="presentacion__texto1">Ningún mensaje fue encontrado</p>
+                <p class="presentacion__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="copiar">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Alexander perez perez</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

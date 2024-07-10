@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario:#E5E5E5;
+    --color-secundario:#0A3871;
+    --color-terciario:#f6f6f6;
+    --rgba:rgba (0,0,0,08);
+    --greey: #c5c5c5;
+    --gray: #343a40;
+    --fuente-Inter:'Inter', sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    height: 100%;
+}
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+.header__imagen {
+    display: flex;
+    align-items: flex-start;
+    width: 31.09;
+    height: 48;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    /*background: url(../assets/portada.png) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido1{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--greey);
+    border-radius: 15px;
+    resize: none;
+}
+
+.encriptar::placeholder,:focus{
+    color: var(--color-secundario);
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.boton__encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-terciario);
+    background: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.boton__encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-primario),
+    inset -3px -4px 8px var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.boton__descriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+    background: var(--color-primario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.copiar:active, 
+.boton__descriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-secundario),
+    inset -3px -4px 8px var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.contenido2{
+    width: 270px;
+    height: 600px;
+    background: var(--color-terciario);
+    box-shadow: 10px 24px 32px -8px var(--gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.contenido2__texto{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--color-terciario);
+}
+
+.presentacion__imagen2{
+    background: var(--color-terciario);
+    width: 250px;
+    height: 250px;
+}
+
+.presentacion__texto1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray);
+    background: var(--color-terciario);
+    font-family: var(--fuente-Inter);
+}
+
+.presentacion__texto2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray);
+    background: var(--color-terciario);
+    font-family: var(--fuente-Inter);
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--greey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+}
+
+.copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--color-primario);
+    border: 1px solid var(--color-secundario);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.boton__encriptar:hover,
+.boton__descriptar:hover,
+.copiar:hover{
+    transform: scale(0.97);
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    margin: 70px;
+    padding: 10px;
+    color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--fuente-Inter);
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 1250px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contenido1{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .boton{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .contenido2{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .contenido2__texto {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .presentacion__imagen2{
+        display: none;
+    }
+
+    .copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 720px){
+    header .header__imagen{
+        width: 100%;
+        background: var(--color-terciario);
+        padding: 2px;
+    }
+
+    .encriptar{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .boton{
+        display: grid;
+        gap: 21px;
+    }
+
+    .contenido2{
+        width: 90%;
+    }
+    
+
+}
